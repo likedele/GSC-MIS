@@ -5,7 +5,7 @@ from einops.layers.torch import Rearrange
 from torch.nn import functional as F
 
 # from .networks.segformer import *
-from .CFGCN import *
+from .HGCN import *
 from .segformer import *
 from .masag import MultiScaleGatedAttn
 from .merit_lib.networks import MaxViT4Out_Small

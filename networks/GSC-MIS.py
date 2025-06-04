@@ -406,7 +406,7 @@ class DWCon(nn.Module):
         return self.conv(x)
 ##########################################
 #
-#         MSA^2Net Decoder Blocks
+#         SGraphNet Decoder Blocks
 #
 ##########################################
 
@@ -447,7 +447,7 @@ class GCNmodel(nn.Module):
                                                 head_count=head_count)
         self.conv = DWCon(dims,dims)
         self.spa = SpatialAttentionCBAM()
-        self.cbam=CBAM(in_out_chan[3])
+        self.cbam= CBAM(in_out_chan[3])
         self.sru = SRU(in_out_chan[3], group_num=16, gate_treshold=0.5)
 
         self.is_last = is_last
@@ -609,7 +609,7 @@ class MyDecoderLayerDAEFormer(nn.Module):
 
 ##########################################
 #
-#                MSA^2Net
+#               SGraphNet
 #
 ##########################################
 # from .merit_lib.networks import MaxViT4Out_Small#, MaxViT4Out_Small3D

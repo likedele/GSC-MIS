@@ -1,1 +1,1 @@
-# GSC-MIS
+# SGraphNet

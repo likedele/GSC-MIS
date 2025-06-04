@@ -616,7 +616,7 @@ class MyDecoderLayerDAEFormer(nn.Module):
 # from networks.merit_lib.networks import MaxViT4Out_Small
 # from .merit_lib.decoders import CASCADE_Add, CASCADE_Cat
 
-class Msa2Net(nn.Module):
+class SGraphNet(nn.Module):
     def __init__(self, num_classes=9, token_mlp_mode="mix_skip"):
         super().__init__()
 
